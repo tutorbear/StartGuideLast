@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/second_slider_constraint_layout">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="@dimen/_271sdp"
+        android:layout_height="@dimen/_146sdp"
+        android:layout_marginStart="2dp"
+        android:src="@drawable/slider_two_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:alpha=".9"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Are you a teacher or a student ?"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_34sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/_210sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/button_background_orange"
+        android:fontFamily="@font/kiona_regular"
+        android:text="I AM A TEACHER"
+        android:textColor="#f68c1e"
+        android:textSize="@dimen/_19sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/_210sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/button_background"
+
+        android:fontFamily="@font/kiona_regular"
+        android:text="I AM A STUDENT"
+        android:textColor="#0784c3"
+        android:textSize="@dimen/_19sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.26999998" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
