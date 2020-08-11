@@ -8,7 +8,6 @@
     android:background="#FFFFFF"
     >
     <ImageView
-        android:id="@+id/imageView4"
         android:layout_width="@dimen/_75sdp"
         android:layout_height="@dimen/_36sdp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
@@ -37,7 +36,6 @@
 
 
     <ImageView
-        android:id="@+id/imageView5"
         android:layout_width="@dimen/_75sdp"
         android:layout_height="@dimen/_36sdp"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
