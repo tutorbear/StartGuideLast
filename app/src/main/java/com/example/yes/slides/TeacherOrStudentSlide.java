@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
@@ -13,8 +14,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.yes.R;
 import com.github.appintro.SlideBackgroundColorHolder;
+import com.github.appintro.SlidePolicy;
 
-public class TeacherOrStudentSlide extends Fragment implements SlideBackgroundColorHolder {
+public class TeacherOrStudentSlide extends Fragment implements SlideBackgroundColorHolder , SlidePolicy {
 
     private static final String ARG_COLOR_INT = "COLOR_INT";
     private int originalColor = 0;
@@ -57,4 +59,14 @@ public class TeacherOrStudentSlide extends Fragment implements SlideBackgroundCo
     }
 
 
+    @Override
+    public boolean isPolicyRespected() {
+
+        return false;
+    }
+
+    @Override
+    public void onUserIllegallyRequestedNextPage() {
+        Toast.makeText(getContext(), "Please select if you are a Teacher or Student!", Toast.LENGTH_SHORT).show();
+    }
 }

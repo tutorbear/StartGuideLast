@@ -53,9 +53,22 @@ public class MainActivity extends AppIntro {
 
         setDoneText("");
 
-        setNextArrowColor(ColorEx.TUTOR_BEAR_DARK_BLUE);
+        changeIndicatorColor("Dark Blue");
 
-        setIndicatorEnabled(false);
+
+    }
+
+    @Override
+    protected void onSlideChanged(Fragment oldFragment, Fragment newFragment) {
+        super.onSlideChanged(oldFragment, newFragment);
+        if (newFragment == loginSlide) {
+            changeIndicatorColor("Dark Blue");
+        }
+
+        if (newFragment == teacherOrStudentSlide) {
+            setNextPageSwipeLock(true);
+            changeIndicatorColor("White");
+        }
 
     }
 
@@ -68,6 +81,7 @@ public class MainActivity extends AppIntro {
         goToNextSlide(false);
         IS_STUDENT = Boolean.TRUE;
         IS_TEACHER = Boolean.FALSE;
+
     }
 
     public void iAmTeacher(View view) {
@@ -79,30 +93,20 @@ public class MainActivity extends AppIntro {
 
     public void createMyAccount(View view) {
         if (IS_TEACHER) {
-            //show teacher guide
+            startActivity(new Intent(this , TeacherActivity.class));
+            finish();
         } else if (IS_STUDENT) {
-            //show student guide
+            startActivity(new Intent(this, StudentActivity.class));
+            finish();
         }
     }
 
-    @Override
-    protected void onSlideChanged(Fragment oldFragment, Fragment newFragment) {
-        super.onSlideChanged(oldFragment, newFragment);
-        if (newFragment == loginSlide){
-            if (!IS_TEACHER && !IS_STUDENT){
 
-                setNextPageSwipeLock(true);
-                Toast.makeText(this, "Please select if you are a teacher or student!", Toast.LENGTH_SHORT).show();
-            }
-
-
-        }
-    }
 
     public void login(View view) {
-        Toast.makeText(this,"Logging in!" , Toast.LENGTH_SHORT).show();
-         startActivity(new Intent(this,LoginActivity.class));
-         finish();
+        Toast.makeText(this, "Logging in!", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, LoginActivity.class));
+        finish();
     }
 
     public void signUp(View view) {
@@ -110,6 +114,16 @@ public class MainActivity extends AppIntro {
 
     }
 
+    private void changeIndicatorColor(String colorLabel) {
+        if (colorLabel.equals("Dark Blue")) {
+            setIndicatorColor(ColorEx.TUTOR_BEAR_DARK_BLUE, ColorEx.TUTOR_BEAR_DARK_BLUE);
+            setNextArrowColor(ColorEx.TUTOR_BEAR_DARK_BLUE);
+        } else {
+            setIndicatorColor(ColorEx.WHITE, ColorEx.WHITE);
+            setNextArrowColor(ColorEx.WHITE);
+        }
+
+    }
 
 
 }
