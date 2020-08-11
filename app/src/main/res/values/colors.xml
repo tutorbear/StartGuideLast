@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="textColorBlue">#0784c3</color>
+    <color name="tutor_bear_text_blue">#0784C3</color>
+    <color name="tutor_bear_text_orange">#F68C1E</color>
+    <color name="tutor_bear_teacher_or_student_slide_sky">#64D0FF</color>
+    <color name="color_white">#FFFFFF</color>
 </resources>

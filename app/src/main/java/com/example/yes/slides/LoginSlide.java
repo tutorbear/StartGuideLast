@@ -1,27 +1,28 @@
-package com.example.yes;
+package com.example.yes.slides;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 import androidx.annotation.ColorInt;
-import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
+import com.example.yes.MainActivity;
 import com.example.yes.R;
 import com.github.appintro.SlideBackgroundColorHolder;
+import com.github.appintro.SlideSelectionListener;
 
-public class FirstSlide extends Fragment implements SlideBackgroundColorHolder {
+public class LoginSlide extends Fragment implements SlideBackgroundColorHolder, SlideSelectionListener {
 
-    private static final String ARG_LAYOUT_RES_ID = "LAYOUT_RES_ID";
     private static final String ARG_COLOR_INT = "COLOR_INT";
     private int originalColor = 0;
     private ConstraintLayout background = null;
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -32,21 +33,27 @@ public class FirstSlide extends Fragment implements SlideBackgroundColorHolder {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.first_slider_layout, container, false);
+        return inflater.inflate(R.layout.login_slide_layout, container, false);
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @androidx.annotation.Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        background = view.findViewById(R.id.first_slider_constraint_layout);
+        background = view.findViewById(R.id.login_slide_constraint_layout);
     }
 
-    static FirstSlide newInstance(@ColorInt int originalColor) {
-        FirstSlide newFragment = new FirstSlide();
+    public static LoginSlide newInstance(@ColorInt int originalColor) {
+        LoginSlide newFragment = new LoginSlide();
         Bundle args = new Bundle();
         args.putInt(ARG_COLOR_INT, originalColor);
         newFragment.setArguments(args);
         return newFragment;
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+
+        super.onAttach(context);
     }
 
     @Override
@@ -57,5 +64,14 @@ public class FirstSlide extends Fragment implements SlideBackgroundColorHolder {
     @Override
     public void setBackgroundColor(int backgroundColor) {
         background.setBackgroundColor(backgroundColor);
+    }
+
+    @Override
+    public void onSlideDeselected() {
+
+    }
+
+    @Override
+    public void onSlideSelected() {
     }
 }

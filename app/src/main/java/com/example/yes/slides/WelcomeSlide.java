@@ -1,13 +1,11 @@
-package com.example.yes;
+package com.example.yes.slides;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 import androidx.annotation.ColorInt;
-import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -16,7 +14,7 @@ import androidx.fragment.app.Fragment;
 import com.example.yes.R;
 import com.github.appintro.SlideBackgroundColorHolder;
 
-public class SecondSlide extends Fragment implements SlideBackgroundColorHolder {
+public class WelcomeSlide extends Fragment implements SlideBackgroundColorHolder {
 
     private static final String ARG_LAYOUT_RES_ID = "LAYOUT_RES_ID";
     private static final String ARG_COLOR_INT = "COLOR_INT";
@@ -32,17 +30,17 @@ public class SecondSlide extends Fragment implements SlideBackgroundColorHolder 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.second_slider_layout, container, false);
+        return inflater.inflate(R.layout.welcome_slide_layout, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @androidx.annotation.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        background = view.findViewById(R.id.second_slider_constraint_layout);
+        background = view.findViewById(R.id.welcome_slide_constraint_layout);
     }
 
-    static SecondSlide newInstance( @ColorInt int originalColor) {
-        SecondSlide newFragment = new SecondSlide();
+    public static WelcomeSlide newInstance(@ColorInt int originalColor) {
+        WelcomeSlide newFragment = new WelcomeSlide();
         Bundle args = new Bundle();
         args.putInt(ARG_COLOR_INT, originalColor);
         newFragment.setArguments(args);
