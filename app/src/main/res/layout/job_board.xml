@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:background="@drawable/salary_layout_border"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SALARY"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_30sdp"
+            android:gravity="left"
+            android:paddingLeft="@dimen/_7sdp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="9000"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_30sdp"
+            android:gravity="end"
+            android:drawableEnd="@drawable/ic_taka_icon"
+            android:paddingRight="@dimen/_7sdp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADABOR"
+        android:fontFamily="@font/kiona_regular"
+        android:textColor="@color/textColorBlue"
+        android:textSize="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:drawableRight="@drawable/ic_house"
+        android:paddingRight="@dimen/_7sdp"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Number of students"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="left"
+            android:paddingLeft="@dimen/_7sdp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="end"
+            android:paddingRight="@dimen/_7sdp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Tutor required"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="left"
+            android:paddingLeft="@dimen/_7sdp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="end"
+            android:paddingRight="@dimen/_7sdp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="11"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="Student(S) gender"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="left"
+            android:paddingLeft="@dimen/_7sdp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:text="FEMALE, FEMALE"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="end"
+            android:paddingRight="@dimen/_7sdp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Curriculum"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="left"
+            android:paddingLeft="@dimen/_7sdp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cambridge"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="end"
+            android:paddingRight="@dimen/_7sdp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Class"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="left"
+            android:paddingLeft="@dimen/_7sdp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="OLEVEL's, ALEVEL'S"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="end"
+            android:paddingRight="@dimen/_7sdp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Days in week"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="left"
+            android:paddingLeft="@dimen/_7sdp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="end"
+            android:paddingRight="@dimen/_7sdp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Preferred study time"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="left"
+            android:paddingLeft="@dimen/_7sdp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="12 AM, 12 PM"
+            android:fontFamily="@font/kiona_regular"
+            android:textColor="@color/textColorBlue"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="end"
+            android:paddingRight="@dimen/_7sdp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student 1's subjects"
+        android:fontFamily="@font/kiona_regular"
+        android:textColor="@color/textColorBlue"
+        android:textSize="@dimen/_18sdp"
+        android:layout_gravity="center"
+        android:paddingRight="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maths, Physics, Chemistry, biology, sexology, psychology, fuckology, kill me baby, im a very big string oh yes fuck me"
+        android:textAlignment="center"
+        android:fontFamily="@font/kiona_regular"
+        android:textColor="@color/textColorBlue"
+        android:textSize="@dimen/_14sdp"
+        android:layout_gravity="center"
+        android:paddingRight="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        /><TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student 2's subjects"
+        android:fontFamily="@font/kiona_regular"
+        android:textColor="@color/textColorBlue"
+        android:textSize="@dimen/_18sdp"
+        android:layout_gravity="center"
+        android:paddingRight="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maths, Physics, Chemistry, biology, sexology, psychology, fuckology, kill me baby, im a very big string oh yes fuck me"
+        android:textAlignment="center"
+        android:fontFamily="@font/kiona_regular"
+        android:textColor="@color/textColorBlue"
+        android:textSize="@dimen/_14sdp"
+        android:layout_gravity="center"
+        android:paddingRight="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        />
+
+
+
+
+</LinearLayout>
