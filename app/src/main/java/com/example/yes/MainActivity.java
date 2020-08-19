@@ -56,6 +56,8 @@ public class MainActivity extends AppIntro {
         changeIndicatorColor("Dark Blue");
 
 
+
+
     }
 
     @Override
@@ -66,7 +68,11 @@ public class MainActivity extends AppIntro {
         }
 
         if (newFragment == teacherOrStudentSlide) {
-            setNextPageSwipeLock(true);
+//            setNextPageSwipeLock(true); //doesnt work
+            setSwipeLock(true);
+            //If i remove the SlidePolicy and use the method setSwipeLock(), then it locks both forward and backward swiping as well.
+            //I just want the user to not be able to swipe forwards and not be able to goToNextSlide unless he clicks one of the buttons,
+            //But I do want him to be able to go backwards with swipe. Pls help and thankyou!
             changeIndicatorColor("White");
         }
 

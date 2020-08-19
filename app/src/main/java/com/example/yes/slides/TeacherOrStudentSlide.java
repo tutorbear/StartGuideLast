@@ -16,7 +16,7 @@ import com.example.yes.R;
 import com.github.appintro.SlideBackgroundColorHolder;
 import com.github.appintro.SlidePolicy;
 
-public class TeacherOrStudentSlide extends Fragment implements SlideBackgroundColorHolder , SlidePolicy {
+public class TeacherOrStudentSlide extends Fragment implements SlideBackgroundColorHolder  {
 
     private static final String ARG_COLOR_INT = "COLOR_INT";
     private int originalColor = 0;
@@ -59,14 +59,15 @@ public class TeacherOrStudentSlide extends Fragment implements SlideBackgroundCo
     }
 
 
-    @Override
-    public boolean isPolicyRespected() {
+//    @Override
+//    public boolean isPolicyRespected() {
+//        return false;
+//    }
+//
+//    @Override
+//    public void onUserIllegallyRequestedNextPage() {
+//        Toast.makeText(getContext(), "Please select if you are a Teacher or Student!", Toast.LENGTH_SHORT).show();
+//    }
 
-        return false;
-    }
-
-    @Override
-    public void onUserIllegallyRequestedNextPage() {
-        Toast.makeText(getContext(), "Please select if you are a Teacher or Student!", Toast.LENGTH_SHORT).show();
-    }
+    //This is the teacher or student slide, the slide where i want the forward swiping to lock
 }

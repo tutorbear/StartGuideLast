@@ -1,4 +1,4 @@
-package com.example.yes.slides.teachersliders;
+package com.example.yes.slides.studentGuideSliders;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.yes.R;
 
-public class TeacherSliderTwo extends Fragment {
+public class StudentSliderTwo extends Fragment {
 
 
 
@@ -24,7 +24,7 @@ public class TeacherSliderTwo extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.teacher_slider_2, container, false);
+        return inflater.inflate(R.layout.student_slider_2, container, false);
     }
 
     @Override

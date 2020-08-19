@@ -1,20 +1,17 @@
-package com.example.yes.slides.teachersliders;
+package com.example.yes.slides.teacherGuideSliders;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
 import com.example.yes.R;
-import com.github.appintro.SlideBackgroundColorHolder;
 
-public class TeacherSliderOne extends Fragment {
+public class TeacherSliderThree extends Fragment {
 
 
 
@@ -27,7 +24,7 @@ public class TeacherSliderOne extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.teacher_slider_1, container, false);
+        return inflater.inflate(R.layout.teacher_slider_3, container, false);
     }
 
     @Override

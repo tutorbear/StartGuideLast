@@ -1,17 +1,13 @@
 package com.example.yes;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.transition.Slide;
 
-import com.example.yes.slides.teachersliders.TeacherSliderFour;
-import com.example.yes.slides.teachersliders.TeacherSliderOne;
-import com.example.yes.slides.teachersliders.TeacherSliderThree;
-import com.example.yes.slides.teachersliders.TeacherSliderTwo;
+import com.example.yes.slides.teacherGuideSliders.TeacherSliderFour;
+import com.example.yes.slides.teacherGuideSliders.TeacherSliderOne;
+import com.example.yes.slides.teacherGuideSliders.TeacherSliderThree;
+import com.example.yes.slides.teacherGuideSliders.TeacherSliderTwo;
 import com.github.appintro.AppIntro;
 import com.github.appintro.AppIntroPageTransformerType;
-import com.github.appintro.model.SliderPage;
 
 public class TeacherActivity extends AppIntro {
 
